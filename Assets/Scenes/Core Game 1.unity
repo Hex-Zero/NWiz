@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -342, y: -118}
+  m_AnchoredPosition: {x: -346, y: 30.15}
   m_SizeDelta: {x: 190, y: 60.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &162967447
@@ -276,7 +276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 611, y: 490}
+  m_AnchoredPosition: {x: 306, y: 501}
   m_SizeDelta: {x: 809.9, y: 1290.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &224791172
@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 2053276054}
   - component: {fileID: 2053276053}
   m_Layer: 5
-  m_Name: Start Text
+  m_Name: Success Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start
+  m_text: Success
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f3866d92939db544ab295c041fc575ba, type: 2}
   m_sharedMaterial: {fileID: 5654184632432122691, guid: f3866d92939db544ab295c041fc575ba, type: 2}
@@ -695,7 +695,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2053276053}
-    characterCount: 5
+    characterCount: 7
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
