@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NumberWizard : MonoBehaviour
 {
 
     [SerializeField] int max;
     [SerializeField] int min;
+    [SerializeField] TextMeshProUGUI guessText;
     int guess;
 
     void Start()
@@ -16,30 +18,24 @@ public class NumberWizard : MonoBehaviour
 
     void StartGame()
     {
-        max = 1000;
-        min = 1;
-        guess = 500;
+        guess = (max + min) / 2;
+        guessText.text = guess.ToString();
         max = max + 1;
     }
-    void Update()
+    public void OnPressHigher()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            min = guess;
-            NextGuess();
-        }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            max = guess;
-            NextGuess();
-        }
-        else if (Input.GetKeyDown(KeyCode.Return))
-        {
-            StartGame();
-        }
+        min = guess;
+        NextGuess();
     }
+    public void OnPressLower()
+    {
+        max = guess;
+        NextGuess();
+    }
+
     void NextGuess()
     {
         guess = (max + min) / 2;
+        guessText.text = guess.ToString();
     }
 }
